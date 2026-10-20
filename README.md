@@ -5,6 +5,8 @@ A directed citation network of the bibliometrics literature, built from OpenAlex
 Python and NetworkX. Every number in the final slide deck is generated from the data by the scripts
 in this repository.
 
+**Presentation (Canva):** [Citation Network Analysis, 13 slides](https://www.canva.com/d/bIn8BtE9-fGY0yv)
+
 ## 1. Project description
 
 **Main question:** which papers are most influential in the bibliometrics literature, and how are

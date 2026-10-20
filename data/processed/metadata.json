@@ -1,0 +1,16 @@
+{
+  "database": "OpenAlex",
+  "queries": [
+    "bibliometric",
+    "citation analysis",
+    "co-citation",
+    "bibliographic coupling",
+    "scientometrics"
+  ],
+  "filter": "title.search:\"<query>\", type:article, has_references:true",
+  "sort": "cited_by_count desc",
+  "per_query": 100,
+  "excluded_ids": [],
+  "retrieved": "2026-10-20",
+  "n_edges_before_cleaning": 428
+}

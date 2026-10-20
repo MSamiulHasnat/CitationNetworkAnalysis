@@ -1,0 +1,7 @@
+requests
+pandas
+networkx
+matplotlib
+scipy
+python-pptx
+adjustText

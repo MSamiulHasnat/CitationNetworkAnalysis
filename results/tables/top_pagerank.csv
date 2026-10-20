@@ -1,0 +1,11 @@
+rank,id,title,year,value
+1,https://openalex.org/W1970859146,Bibliographic coupling between scientific papers,1963,0.07262234757079214
+2,https://openalex.org/W2005207065,Co‐citation in the scientific literature: A new measure of the relationship between two documents,1973,0.06447669443715827
+3,https://openalex.org/W2123455699,From the science of science to Scientometrics visualizing the history of science with HistCite software,2009,0.033547081636633565
+4,https://openalex.org/W2150220236,"Software survey: VOSviewer, a computer program for bibliometric mapping",2009,0.03311953291716196
+5,https://openalex.org/W2053549370,Citation Analysis as a Tool in Journal Evaluation,1972,0.029407568745218212
+6,https://openalex.org/W2069613886,Scholarly communication and bibliometrics,2002,0.02744978195162254
+7,https://openalex.org/W2072897447,"Visualizing a discipline: An author co‐citation analysis of information science, 1972–1995",1998,0.022700287906647177
+8,https://openalex.org/W2071096576,The use of bibliometric data for the measurement of university research performance,1985,0.020596769454539126
+9,https://openalex.org/W2069134922,Toward a definition of “bibliometrics”,1987,0.018852329767561554
+10,https://openalex.org/W2015415650,"New bibliometric tools for the assessment of national research performance: Database description, overview of indicators and first applications",1995,0.01832273078973931

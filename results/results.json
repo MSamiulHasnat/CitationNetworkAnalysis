@@ -1,0 +1,569 @@
+{
+  "metadata": {
+    "database": "OpenAlex",
+    "queries": [
+      "bibliometric",
+      "citation analysis",
+      "co-citation",
+      "bibliographic coupling",
+      "scientometrics"
+    ],
+    "filter": "title.search:\"<query>\", type:article, has_references:true",
+    "sort": "cited_by_count desc",
+    "per_query": 100,
+    "excluded_ids": [],
+    "retrieved": "2026-10-20",
+    "n_edges_before_cleaning": 428
+  },
+  "data_quality": {
+    "self_loops_removed": 4,
+    "edges_citing_newer_paper": 1
+  },
+  "summary": {
+    "N": 150,
+    "E": 424,
+    "mean_in_degree": 2.8266666666666667,
+    "mean_total_degree": 5.653333333333333,
+    "density": 0.018970917225950783,
+    "isolated_nodes": 15,
+    "weak_components": 17,
+    "largest_wcc_size": 133,
+    "avg_clustering_undirected": 0.21172067318122628,
+    "transitivity_undirected": 0.1736470588235294,
+    "avg_path_length_largest_wcc_undirected": 2.9246981089086352,
+    "diameter_largest_wcc_undirected": 7
+  },
+  "top_in_degree": [
+    {
+      "rank": 1,
+      "id": "https://openalex.org/W2005207065",
+      "title": "Co\u2010citation in the scientific literature: A new measure of the relationship between two documents",
+      "year": 1973,
+      "value": 41.0
+    },
+    {
+      "rank": 2,
+      "id": "https://openalex.org/W2150220236",
+      "title": "Software survey: VOSviewer, a computer program for bibliometric mapping",
+      "year": 2009,
+      "value": 31.0
+    },
+    {
+      "rank": 3,
+      "id": "https://openalex.org/W1970859146",
+      "title": "Bibliographic coupling between scientific papers",
+      "year": 1963,
+      "value": 18.0
+    },
+    {
+      "rank": 4,
+      "id": "https://openalex.org/W2072897447",
+      "title": "Visualizing a discipline: An author co\u2010citation analysis of information science, 1972\u20131995",
+      "year": 1998,
+      "value": 15.0
+    },
+    {
+      "rank": 5,
+      "id": "https://openalex.org/W2053549370",
+      "title": "Citation Analysis as a Tool in Journal Evaluation",
+      "year": 1972,
+      "value": 12.0
+    },
+    {
+      "rank": 6,
+      "id": "https://openalex.org/W2088037265",
+      "title": "Changes in the intellectual structure of strategic management research: a bibliometric study of the Strategic Management Journal , 1980\u20132000",
+      "year": 2004,
+      "value": 11.0
+    },
+    {
+      "rank": 7,
+      "id": "https://openalex.org/W2069134922",
+      "title": "Toward a definition of \u201cbibliometrics\u201d",
+      "year": 1987,
+      "value": 10.0
+    },
+    {
+      "rank": 8,
+      "id": "https://openalex.org/W2009918649",
+      "title": "The intellectual structure of the strategic management field: an author co\u2010citation analysis",
+      "year": 2007,
+      "value": 10.0
+    },
+    {
+      "rank": 9,
+      "id": "https://openalex.org/W1888811121",
+      "title": "The Literature of Bibliometrics, Scientometrics, and Informetrics",
+      "year": 2001,
+      "value": 8.0
+    },
+    {
+      "rank": 10,
+      "id": "https://openalex.org/W3125707221",
+      "title": "Bibliometric Methods in Management and Organization",
+      "year": 2014,
+      "value": 8.0
+    }
+  ],
+  "top_out_degree": [
+    {
+      "rank": 1,
+      "id": "https://openalex.org/W3160856016",
+      "title": "How to conduct a bibliometric analysis: An overview and guidelines",
+      "year": 2021,
+      "value": 16.0
+    },
+    {
+      "rank": 2,
+      "id": "https://openalex.org/W3125707221",
+      "title": "Bibliometric Methods in Management and Organization",
+      "year": 2014,
+      "value": 12.0
+    },
+    {
+      "rank": 3,
+      "id": "https://openalex.org/W2886191303",
+      "title": "Knowledge management: A global examination based on bibliometric analysis",
+      "year": 2018,
+      "value": 11.0
+    },
+    {
+      "rank": 4,
+      "id": "https://openalex.org/W2918064950",
+      "title": "Mapping the Intellectual Structure of Social Entrepreneurship Research: A Citation/Co-citation Analysis",
+      "year": 2019,
+      "value": 11.0
+    },
+    {
+      "rank": 5,
+      "id": "https://openalex.org/W2070242399",
+      "title": "A review of theory and practice in scientometrics",
+      "year": 2015,
+      "value": 11.0
+    },
+    {
+      "rank": 6,
+      "id": "https://openalex.org/W2785537869",
+      "title": "Fifty years of the European Journal of Marketing : a bibliometric analysis",
+      "year": 2018,
+      "value": 9.0
+    },
+    {
+      "rank": 7,
+      "id": "https://openalex.org/W4392513195",
+      "title": "How to design bibliometric research: an overview and a framework proposal",
+      "year": 2024,
+      "value": 9.0
+    },
+    {
+      "rank": 8,
+      "id": "https://openalex.org/W2729516107",
+      "title": "Bibliometrics of social media research: A co-citation and co-word analysis",
+      "year": 2017,
+      "value": 9.0
+    },
+    {
+      "rank": 9,
+      "id": "https://openalex.org/W2772451958",
+      "title": "Some bibliometric procedures for analyzing and evaluating research fields",
+      "year": 2017,
+      "value": 9.0
+    },
+    {
+      "rank": 10,
+      "id": "https://openalex.org/W2914577123",
+      "title": "A Bibliometric Review of Research on Educational Administration: Science Mapping the Literature, 1960 to 2018",
+      "year": 2019,
+      "value": 9.0
+    }
+  ],
+  "top_betweenness": [
+    {
+      "rank": 1,
+      "id": "https://openalex.org/W3160856016",
+      "title": "How to conduct a bibliometric analysis: An overview and guidelines",
+      "year": 2021,
+      "value": 0.010859883133373067
+    },
+    {
+      "rank": 2,
+      "id": "https://openalex.org/W3125707221",
+      "title": "Bibliometric Methods in Management and Organization",
+      "year": 2014,
+      "value": 0.007083311739352006
+    },
+    {
+      "rank": 3,
+      "id": "https://openalex.org/W2069613886",
+      "title": "Scholarly communication and bibliometrics",
+      "year": 2002,
+      "value": 0.007050758812503779
+    },
+    {
+      "rank": 4,
+      "id": "https://openalex.org/W2009918649",
+      "title": "The intellectual structure of the strategic management field: an author co\u2010citation analysis",
+      "year": 2007,
+      "value": 0.005154861237076002
+    },
+    {
+      "rank": 5,
+      "id": "https://openalex.org/W2088037265",
+      "title": "Changes in the intellectual structure of strategic management research: a bibliometric study of the Strategic Management Journal , 1980\u20132000",
+      "year": 2004,
+      "value": 0.004464123759425773
+    },
+    {
+      "rank": 6,
+      "id": "https://openalex.org/W2072897447",
+      "title": "Visualizing a discipline: An author co\u2010citation analysis of information science, 1972\u20131995",
+      "year": 1998,
+      "value": 0.004415699256303283
+    },
+    {
+      "rank": 7,
+      "id": "https://openalex.org/W2039027543",
+      "title": "Bibliometric Methods: Pitfalls and Possibilities",
+      "year": 2005,
+      "value": 0.004193551173416945
+    },
+    {
+      "rank": 8,
+      "id": "https://openalex.org/W2990450011",
+      "title": "Forty-five years of Journal of Business Research: A bibliometric analysis",
+      "year": 2019,
+      "value": 0.003801620412358667
+    },
+    {
+      "rank": 9,
+      "id": "https://openalex.org/W2563961554",
+      "title": "A bibliometric analysis of operations research and management science",
+      "year": 2016,
+      "value": 0.003550320454682871
+    },
+    {
+      "rank": 10,
+      "id": "https://openalex.org/W2137174507",
+      "title": "The evolution of the intellectual structure of operations management\u20141980\u20132006: A citation/co\u2010citation analysis",
+      "year": 2008,
+      "value": 0.0031198984219118447
+    }
+  ],
+  "top_pagerank": [
+    {
+      "rank": 1,
+      "id": "https://openalex.org/W1970859146",
+      "title": "Bibliographic coupling between scientific papers",
+      "year": 1963,
+      "value": 0.07262234757079214
+    },
+    {
+      "rank": 2,
+      "id": "https://openalex.org/W2005207065",
+      "title": "Co\u2010citation in the scientific literature: A new measure of the relationship between two documents",
+      "year": 1973,
+      "value": 0.06447669443715827
+    },
+    {
+      "rank": 3,
+      "id": "https://openalex.org/W2123455699",
+      "title": "From the science of science to Scientometrics visualizing the history of science with HistCite software",
+      "year": 2009,
+      "value": 0.033547081636633565
+    },
+    {
+      "rank": 4,
+      "id": "https://openalex.org/W2150220236",
+      "title": "Software survey: VOSviewer, a computer program for bibliometric mapping",
+      "year": 2009,
+      "value": 0.03311953291716196
+    },
+    {
+      "rank": 5,
+      "id": "https://openalex.org/W2053549370",
+      "title": "Citation Analysis as a Tool in Journal Evaluation",
+      "year": 1972,
+      "value": 0.029407568745218212
+    },
+    {
+      "rank": 6,
+      "id": "https://openalex.org/W2069613886",
+      "title": "Scholarly communication and bibliometrics",
+      "year": 2002,
+      "value": 0.02744978195162254
+    },
+    {
+      "rank": 7,
+      "id": "https://openalex.org/W2072897447",
+      "title": "Visualizing a discipline: An author co\u2010citation analysis of information science, 1972\u20131995",
+      "year": 1998,
+      "value": 0.022700287906647177
+    },
+    {
+      "rank": 8,
+      "id": "https://openalex.org/W2071096576",
+      "title": "The use of bibliometric data for the measurement of university research performance",
+      "year": 1985,
+      "value": 0.020596769454539126
+    },
+    {
+      "rank": 9,
+      "id": "https://openalex.org/W2069134922",
+      "title": "Toward a definition of \u201cbibliometrics\u201d",
+      "year": 1987,
+      "value": 0.018852329767561554
+    },
+    {
+      "rank": 10,
+      "id": "https://openalex.org/W2015415650",
+      "title": "New bibliometric tools for the assessment of national research performance: Database description, overview of indicators and first applications",
+      "year": 1995,
+      "value": 0.01832273078973931
+    }
+  ],
+  "in_degree_max": 41,
+  "frac_zero_in_degree": 0.3333333333333333,
+  "spearman_indegree_pagerank": {
+    "rho": 0.9622812041034707,
+    "p": 1.4526240439552407e-85
+  },
+  "spearman_indegree_global_citations": {
+    "rho": 0.35491225722234376,
+    "p": 8.336387333741181e-06
+  },
+  "top10_overlap_indegree_pagerank": 6,
+  "communities": {
+    "algorithm": "Louvain (undirected, seed=42)",
+    "modularity": 0.4208098425462142,
+    "n_communities": 24,
+    "sizes": [
+      25,
+      22,
+      21,
+      20,
+      19,
+      13,
+      10,
+      3,
+      2,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ]
+  },
+  "community_profiles": [
+    {
+      "community": 0,
+      "size": 25,
+      "median_year": 2015.0,
+      "top_papers": "Co\u2010citation in the scientific literature: A n (1973) | Bibliographic coupling between scientific pap (1963) | Mapping of science by combined co-citation an (1991)"
+    },
+    {
+      "community": 1,
+      "size": 22,
+      "median_year": 2007.5,
+      "top_papers": "Visualizing a discipline: An author co\u2010citati (1998) | Changes in the intellectual structure of stra (2004) | The intellectual structure of the strategic m (2007)"
+    },
+    {
+      "community": 2,
+      "size": 21,
+      "median_year": 2016.0,
+      "top_papers": "Software survey: VOSviewer, a computer progra (2009) | A unified approach to mapping and clustering  (2010) | A comparison of two techniques for bibliometr (2010)"
+    },
+    {
+      "community": 3,
+      "size": 20,
+      "median_year": 2014.5,
+      "top_papers": "Citation Analysis as a Tool in Journal Evalua (1972) | New bibliometric tools for the assessment of  (1995) | Scholarly Influence in the Field of Managemen (2008)"
+    },
+    {
+      "community": 4,
+      "size": 19,
+      "median_year": 2018.0,
+      "top_papers": "Toward a definition of \u201cbibliometrics\u201d (1987) | The Literature of Bibliometrics, Scientometri (2001) | Mapping the managerial areas of Building Info (2016)"
+    },
+    {
+      "community": 5,
+      "size": 13,
+      "median_year": 2006.0,
+      "top_papers": "Bibliometric Methods: Pitfalls and Possibilit (2005) | Scholarly communication and bibliometrics (2002) | Comparison of the Hirsch-index with standard  (2006)"
+    },
+    {
+      "community": 6,
+      "size": 10,
+      "median_year": 2015.5,
+      "top_papers": "The Structural Influence of Marketing Journal (2003) | The use of bibliometric data for the measurem (1985) | A bibliometric analysis of social entrepreneu (2015)"
+    },
+    {
+      "community": 7,
+      "size": 3,
+      "median_year": 2015.0,
+      "top_papers": "Bibliometrics: The Leiden Manifesto for resea (2015) | A new classification scheme of science fields (2003) | Bias against novelty in science: A cautionary (2017)"
+    }
+  ],
+  "time_split": {
+    "cutoff_year": 2010,
+    "n_up_to_cutoff": 61,
+    "e_up_to_cutoff": 93,
+    "top_in_degree_up_to_cutoff": [
+      {
+        "rank": 1,
+        "id": "https://openalex.org/W2005207065",
+        "title": "Co\u2010citation in the scientific literature: A new measure of the relationship between two documents",
+        "year": 1973,
+        "value": 14.0
+      },
+      {
+        "rank": 2,
+        "id": "https://openalex.org/W2053549370",
+        "title": "Citation Analysis as a Tool in Journal Evaluation",
+        "year": 1972,
+        "value": 7.0
+      },
+      {
+        "rank": 3,
+        "id": "https://openalex.org/W2072897447",
+        "title": "Visualizing a discipline: An author co\u2010citation analysis of information science, 1972\u20131995",
+        "year": 1998,
+        "value": 7.0
+      },
+      {
+        "rank": 4,
+        "id": "https://openalex.org/W1970859146",
+        "title": "Bibliographic coupling between scientific papers",
+        "year": 1963,
+        "value": 5.0
+      },
+      {
+        "rank": 5,
+        "id": "https://openalex.org/W2069613886",
+        "title": "Scholarly communication and bibliometrics",
+        "year": 2002,
+        "value": 5.0
+      },
+      {
+        "rank": 6,
+        "id": "https://openalex.org/W2118645678",
+        "title": "Mapping of science by combined co-citation and word analysis. I. Structural aspects",
+        "year": 1991,
+        "value": 4.0
+      },
+      {
+        "rank": 7,
+        "id": "https://openalex.org/W2099811601",
+        "title": "Is citation analysis a legitimate evaluation tool?",
+        "year": 1979,
+        "value": 4.0
+      },
+      {
+        "rank": 8,
+        "id": "https://openalex.org/W1969666528",
+        "title": "Problems of citation analysis",
+        "year": 1996,
+        "value": 4.0
+      },
+      {
+        "rank": 9,
+        "id": "https://openalex.org/W2015415650",
+        "title": "New bibliometric tools for the assessment of national research performance: Database description, overview of indicators and first applications",
+        "year": 1995,
+        "value": 4.0
+      },
+      {
+        "rank": 10,
+        "id": "https://openalex.org/W2106467926",
+        "title": "The Intellectual Development of Management Information Systems, 1972\u20131982: A Co-Citation Analysis",
+        "year": 1986,
+        "value": 3.0
+      }
+    ],
+    "rank_shift_top10_early": [
+      {
+        "title": "Co\u2010citation in the scientific literature: A n (1973)",
+        "rank_up_to_cutoff": 1,
+        "rank_full": 1,
+        "indeg_up_to_cutoff": 14,
+        "indeg_full": 41
+      },
+      {
+        "title": "Citation Analysis as a Tool in Journal Evalua (1972)",
+        "rank_up_to_cutoff": 2,
+        "rank_full": 5,
+        "indeg_up_to_cutoff": 7,
+        "indeg_full": 12
+      },
+      {
+        "title": "Visualizing a discipline: An author co\u2010citati (1998)",
+        "rank_up_to_cutoff": 2,
+        "rank_full": 4,
+        "indeg_up_to_cutoff": 7,
+        "indeg_full": 15
+      },
+      {
+        "title": "Bibliographic coupling between scientific pap (1963)",
+        "rank_up_to_cutoff": 4,
+        "rank_full": 3,
+        "indeg_up_to_cutoff": 5,
+        "indeg_full": 18
+      },
+      {
+        "title": "Scholarly communication and bibliometrics (2002)",
+        "rank_up_to_cutoff": 4,
+        "rank_full": 14,
+        "indeg_up_to_cutoff": 5,
+        "indeg_full": 6
+      },
+      {
+        "title": "Mapping of science by combined co-citation an (1991)",
+        "rank_up_to_cutoff": 6,
+        "rank_full": 9,
+        "indeg_up_to_cutoff": 4,
+        "indeg_full": 8
+      },
+      {
+        "title": "Is citation analysis a legitimate evaluation  (1979)",
+        "rank_up_to_cutoff": 6,
+        "rank_full": 12,
+        "indeg_up_to_cutoff": 4,
+        "indeg_full": 7
+      },
+      {
+        "title": "Problems of citation analysis (1996)",
+        "rank_up_to_cutoff": 6,
+        "rank_full": 30,
+        "indeg_up_to_cutoff": 4,
+        "indeg_full": 4
+      },
+      {
+        "title": "New bibliometric tools for the assessment of  (1995)",
+        "rank_up_to_cutoff": 6,
+        "rank_full": 14,
+        "indeg_up_to_cutoff": 4,
+        "indeg_full": 6
+      },
+      {
+        "title": "The Intellectual Development of Management In (1986)",
+        "rank_up_to_cutoff": 10,
+        "rank_full": 20,
+        "indeg_up_to_cutoff": 3,
+        "indeg_full": 5
+      }
+    ]
+  },
+  "spearman_year_indegree": {
+    "rho": -0.6097186489928552,
+    "p": 1.2235943586927816e-16
+  }
+}

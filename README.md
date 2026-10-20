@@ -145,3 +145,122 @@ If it does, re-run `analyze.py` and `build_deck.py` so every slide number still 
 - **Time comparison:** the sub-network of papers published up to 2010 versus the full network.
   Ranks use "min" ties.
 - **Rank agreement:** Spearman correlation (in-degree vs PageRank, vs global citations, and vs publication year).
+
+## 8. How do I prepare my project presentation?
+
+The deck `report/CitationNetwork.pptx` has 13 slides. This section explains how to turn it into a
+talk. Check your course brief for the time limit and slide limit first. The timings below assume a
+10-minute talk with 2-3 minutes for questions; scale them up or down to fit.
+
+### 8.1 Preparation timeline (Oct 20-28)
+
+| Day | Task | Output |
+|---|---|---|
+| Oct 25-26 | Set `STUDENT` and `STUDENT_ID` in `src/build_deck.py`, re-run it, then read every slide on screen | final deck |
+| Oct 26 | Remove off-topic papers if any (see section 6), then re-run all three scripts | numbers match the data |
+| Oct 26 | Write a speaker-notes script for each slide (use 8.3) | notes |
+| Oct 27 | Rehearse aloud twice with a timer, once in front of someone | timing within limit |
+| Oct 27 | Prepare answers to the questions in 8.5 | Q&A prep |
+| Oct 27 | Export the PDF and copy the deck to a USB drive and cloud storage | backups |
+| Oct 28 | Open the deck on the presentation computer before your slot | no surprises |
+
+### 8.2 The story in one minute
+
+Learn this first. Every slide supports it.
+
+> "I asked who matters most in the bibliometrics literature. I built a citation network of 150
+> highly cited papers from OpenAlex, with 424 citations between them. The answer depends on the
+> measure. The 1973 co-citation paper has the most citations inside the network. PageRank mostly
+> agrees but reorders the top. The papers that bridge groups are recent review and method papers, not
+> the classics. The network is sparse but connected, with moderate community structure."
+
+Keep the order **question, data, measures, findings, limits, conclusion**. Do not start with tools.
+
+### 8.3 Slide-by-slide guide (13 slides, about 10 minutes)
+
+| # | Slide | Time | What to say | Evidence on the slide |
+|---|---|---|---|---|
+| 1 | Title | 0:15 | Your name, ID, course, and the one-line topic. | name and ID (fill in first) |
+| 2 | Research questions | 0:45 | State the main question, then Q1-Q4 in one breath each. Say that "matters" is measured in three ways. | the five questions |
+| 3 | Data and methods | 1:30 | Source (OpenAlex, retrieved 2026-10-20), the keyword query, de-duplication, top 150, closed sample. Say that `A -> B` means A cites B. Mention the 4 self-loops removed. | N = 150, E = 424 |
+| 4 | Network metrics | 1:00 | Read the table top to bottom. Stress sparse (density 0.019) but connected (133 of 150 papers in one component). Say that 33% of papers are never cited inside the sample. | metrics table |
+| 5 | Most-cited papers (in-degree) | 1:00 | The 1973 co-citation paper leads with 41, then VOSviewer (2009) with 31. Explain that this counts only citations from the other sampled papers. | top-10 table |
+| 6 | The network figure | 0:45 | Explain encodings: size is in-degree, colour is community. Say that the 17 papers outside the main component are not drawn. Point at the largest nodes. | network.png |
+| 7 | In-degree versus PageRank | 1:00 | Correlation is 0.96, yet only 6 of the top 10 are shared. PageRank rewards being cited by well-cited papers. | scatter and table |
+| 8 | Bridge papers (betweenness) | 1:00 | Top bridges are recent reviews and method papers, such as the 2021 guidelines paper. Classics are cited a lot but are not on paths between others. | betweenness table |
+| 9 | Communities | 0:45 | Louvain finds 24 groups with modularity 0.42. Seven groups have 10 or more papers. Say that labels come from structure, not topic. | communities table |
+| 10 | Rankings through time | 0:45 | Compare the network up to 2010 (61 papers, 93 citations) with the full network. The 1973 paper stays first. Several early papers fall. | rank-shift table |
+| 11 | Limitations | 0:45 | Pick the three that matter most: database coverage, keyword sampling, closed sample. Mention citation age briefly. | bullet list |
+| 12 | Conclusions | 0:30 | Answer the main question in two sentences. End with "citation counts show attention, not quality". | summary |
+| 13 | References | 0:00 | Do not read it. Leave it up during questions. | references |
+
+Total is about 10 minutes. If you are short of time, cut slide 9 to one sentence and merge 10 into 12.
+If you have more time, spend it on slides 7 and 8, which are the most interesting findings.
+
+### 8.4 How to speak to each kind of slide
+
+- **Table slides (4, 5, 8, 9, 10):** never read every row. Say what the table shows, give the top
+  one or two rows, then state the takeaway. Example: "The top paper is the 1973 co-citation paper
+  with 41 citations. VOSviewer follows with 31. After that the counts drop quickly."
+- **Figure slides (6, 7):** first explain what the axes or encodings mean, then say what to look at,
+  then give the conclusion. Do not skip the encoding explanation.
+- **Method slides (3):** one sentence per decision, with a reason. "I kept only citations between
+  sampled papers, so every edge is verifiable in my data."
+- **Numbers:** round when speaking ("about 2%" for density 0.019, "about a third" for 33%), but the slide keeps the exact value.
+- **Claims:** do not say "small-world" or "strong communities". Your numbers are a path length of
+  2.92, clustering of 0.21 and modularity of 0.42. Say "moderate community structure".
+- **Honesty about the sample:** say once, early, that these are the 150 most-cited papers matching
+  the keywords, not the whole literature.
+
+### 8.5 Questions to expect and how to answer
+
+| Question | Answer |
+|---|---|
+| Why OpenAlex instead of Web of Science or Scopus? | It is free, needs no login, and returns each paper's reference list, which an edge list needs. The limitation is that coverage differs. |
+| Why 150 papers? | It is large enough to show structure and small enough to check every edge. The count came from the data, not from the template draft. |
+| Why is the in-degree so low (mean 2.83) compared with real citation counts? | In-degree counts citations from the other 149 sampled papers only (a closed sample). Global counts are far larger. They correlate only moderately (Spearman rho 0.35). |
+| What is the difference between in-degree and PageRank? | In-degree counts citations. PageRank also weights each citation by how important the citing paper is. |
+| What does betweenness tell you here? | How often a paper lies on shortest citation paths between other papers. High values mean bridges between groups. |
+| Why do old papers have high in-degree? | They had longer to be cited. Year and in-degree have a Spearman correlation of -0.61. This is a limitation, not a finding about quality. |
+| Why does Louvain give 24 groups? | Papers with no in-sample links each form their own group. Seven groups have 10 or more papers. |
+| Is Louvain result stable? | The seed is fixed at 42 for reproducibility. Another seed could shift borders slightly. Say that you did not test it if you did not. |
+| What about the 1 edge that points to a newer paper? | It is a metadata artefact (a citation to a later version), kept and listed in `results/tables/edges_citing_newer.csv`. |
+| Why a 2010 cutoff? | It splits the sample into a smaller early network (61 papers) and the full one. It is a choice and could be changed in `analyze.py`. |
+| Could the keyword search have missed important papers? | Yes. Only papers with these words in the title are included. This is stated on the limitations slide. |
+| Did you check self-citation? | Self-loops (a paper citing itself) were removed. Author self-citation was not checked. |
+| How can I reproduce your results? | Run the three scripts in section 5. All numbers come from `results/results.json`. |
+
+If you do not know an answer, say what you did and did not test, then say what you would do next.
+
+### 8.6 Design and delivery checklist
+
+**Slides**
+- One message per slide, stated in the title or the footer.
+- Check text is readable from the back of the room (tables are 11-15 pt, so consider trimming rows if the screen is small).
+- Open the network figure at full size once to make sure labels are legible.
+- Same fonts and colours throughout; the deck is generated, so a change in `src/build_deck.py` applies everywhere.
+- The title slide has your real name and ID, not the placeholders.
+
+**Numbers**
+- Re-run the three scripts after any data change, then open the deck and compare each table with `results/results.json`.
+- No "unverified" or draft values left (150/620/4.13/0.028 appear nowhere).
+- The tools listed on the Methods slide are the ones you used (Python, NetworkX, pandas, SciPy, Matplotlib). Gephi is not used, so do not mention it unless you add it.
+
+**Delivery**
+- Rehearse out loud with a timer at least twice. Cut content, not speed, if you run over.
+- Face the audience, not the screen. Point at the figure, then return to eye contact.
+- Pause after the main finding on slide 5 and after the conclusion.
+- Know your first sentence and your last sentence by heart.
+
+**Backups**
+- PDF copy of the deck (`report/CitationNetwork.pdf`; regenerate it with PowerPoint after edits).
+- A copy on a USB drive and one in cloud storage.
+- The repository link: https://github.com/MSamiulHasnat/CitationNetworkAnalysis
+
+### 8.7 Optional extras if you have time
+
+- Add a Gephi version of the network figure (size by in-degree, colour by community) and export it as a PNG. Mention Gephi on the Methods slide only if you do this.
+- Add one slide with a short topic label for each large community, after you have looked at the
+  papers in `results/tables/communities.csv` and `results/tables/node_metrics.csv`.
+- Add a sensitivity check: change `CUTOFF` or `SEED` in `src/analyze.py` and note whether the top findings hold.
+- Add a one-slide summary at the end (the story in 8.2) to leave on screen during questions.
